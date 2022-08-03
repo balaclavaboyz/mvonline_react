@@ -9,10 +9,9 @@ function App() {
                 </Link>
                 <Link to="/faq">Faq</Link>
             </div>
-			<div className="content_homepage">
-
-            <Outlet></Outlet>
-			</div>
+            <div className="content_homepage">
+                <Outlet></Outlet>
+            </div>
             {/* floating buttons */}
             <div className="whatsapp">
                 <a href="">
@@ -25,8 +24,10 @@ function App() {
             </div>
             {/* footer */}
             <div className="footer container container_column">
-				<p>mvonline@mvonline.com.br</p>
-				<Link to="/politica">Política De Privacidade</Link>
+                <a href="mailto:mvonline@mvonline.com.br">
+                    <p>mvonline@mvonline.com.br</p>
+                </a>
+                <Link to="/politica">Política De Privacidade</Link>
                 <p>&copy;Peter Kim 2022</p>
             </div>
         </>
