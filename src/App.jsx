@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
+import { Link, Outlet } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <>
+            {/* menu */}
+            <div className="menu container">
+                <Link to="/">
+                    <img src="logo.svg" alt="logo da mvonline" height={100} />
+                </Link>
+                <Link to="/faq">Faq</Link>
+            </div>
+			<div className="content_homepage">
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+            <Outlet></Outlet>
+			</div>
+            {/* floating buttons */}
+            <div className="whatsapp">
+                <a href="">
+                    <img
+                        src="whatsapp.png"
+                        alt="link para o chat do whatsapp"
+                        height={64}
+                    />
+                </a>
+            </div>
+            {/* footer */}
+            <div className="footer container container_column">
+				<p>mvonline@mvonline.com.br</p>
+				<Link to="/politica">Política De Privacidade</Link>
+                <p>&copy;Peter Kim 2022</p>
+            </div>
+        </>
+    );
 }
 
-export default App
+export default App;
