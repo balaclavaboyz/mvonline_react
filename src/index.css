@@ -29,6 +29,7 @@ body{
   display: flex;
   justify-content: center;
   background-position: center center;
+  font-size: xx-large;
 }
 .color_white{
   color: white;
@@ -40,13 +41,14 @@ body{
 }
 .swiper_container_gallery{
   height: 100%;
-  width: 600px;
+  width: 700px;
 }
 .swiper_slide_gallery{
   display: flex;
   justify-content: center;
-  height: 600px;
+  height: 800px;
 }
 .menu{
   height: 120px;
+  justify-content: space-around;
 }

@@ -29,6 +29,8 @@ export default function Gallery() {
                     <p>Atual Conforto Qualidade</p>
                 </div>
             </div>
+            <div className="container">
+
             <div className="container container_column">
                 <div className="swiper_container_gallery">
                     <Swiper
@@ -82,6 +84,7 @@ export default function Gallery() {
                         ))}
                     </Swiper>
                 </div>
+            </div>
             </div>
         </>
     );
