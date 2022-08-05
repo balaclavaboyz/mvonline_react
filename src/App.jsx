@@ -7,7 +7,7 @@ function App() {
                 <Link to="/">
                     <img src="logo.png" alt="logo da mvonline" height={100} />
                 </Link>
-                <div className="container " style={{ gap: "1rem",fontSize:'x-large' }}>
+                <div className="container menu_links" style={{ gap: "1rem",fontSize:'x-large' }}>
                     <Link to="/" style={{ textDecoration: "underline",color:'black' }}>
                         Home
                     </Link>

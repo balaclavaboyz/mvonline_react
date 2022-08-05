@@ -39,6 +39,7 @@ body{
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 999;
 }
 .swiper_container_gallery{
   height: 100%;
@@ -52,4 +53,20 @@ body{
 .menu{
   height: 120px;
   justify-content: space-around;
+}
+@media only screen and (max-width:1024px){
+  .menu_links{
+    display: none;
+  }
+  .content_homepage > .container{
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  .swiper_container_gallery{
+    width: 100vw;
+  }
+  .swiper_slide_gallery{
+    width: 100%;
+  }
 }
