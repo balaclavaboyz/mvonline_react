@@ -35,7 +35,7 @@ export default function Gallery() {
                 <div className="swiper_container_gallery">
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar]}
-                        spaceBetween={50}
+                        spaceBetween={0}
                         slidesPerView={1}
                         navigation
                         pagination={{ clickable: true }}
@@ -62,7 +62,7 @@ export default function Gallery() {
                 <div className="swiper_container_gallery">
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar]}
-                        spaceBetween={50}
+                        spaceBetween={0}
                         slidesPerView={1}
                         navigation
                         pagination={{ clickable: true }}
