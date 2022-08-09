@@ -24,8 +24,9 @@ export default function Gallery() {
     return (
         <>
             <div className="banner">
-                <div className="container container_column color_white">
-                    <h1>Moda Fast Fashion</h1>
+                <div className="container container_column color_white title">
+                    <h1 className="mobile-none">Moda Fast Fashion</h1>
+                    <h1 className="mobile-block mobile_banner_title">Moda Fast Fashion</h1>
                     <p>Atual Conforto Qualidade</p>
                 </div>
             </div>
