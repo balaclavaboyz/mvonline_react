@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Gallery from "./Gallery";
 import Politica from "./Politica";
 import Termos from './Termos'
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
