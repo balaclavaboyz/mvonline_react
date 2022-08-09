@@ -26,66 +26,65 @@ export default function Gallery() {
             <div className="banner">
                 <div className="container container_column color_white title">
                     <h1 className="mobile-none">Moda Fast Fashion</h1>
-                    <h1 className="mobile-block mobile_banner_title">Moda Fast Fashion</h1>
+                    <h1 className="mobile-block mobile_banner_title">
+                        Moda Fast Fashion
+                    </h1>
                     <p>Atual Conforto Qualidade</p>
                 </div>
             </div>
-            <div className="container">
-
-            <div className="container container_column">
-                <div className="swiper_container_gallery">
-                    <Swiper
-                        modules={[Navigation, Pagination, Scrollbar]}
-                        spaceBetween={0}
-                        slidesPerView={1}
-                        navigation
-                        pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
-                    >
-                        {Object.entries(list).map((t, k) => (
-                            <SwiperSlide>
-                                {/* resolver key para cada child de list */}
-                                <a href={"/gallery/" + t[1]}>
-                                    <div className="swiper_slide_gallery">
-                                        <img
-                                            src={"/gallery/" + t[1]}
-                                            alt="foto das roupas"
-                                            style={{ aspectRatio: 4 / 5 }}
-                                        />
-                                    </div>
-                                </a>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+            <div className="container carousel_margin carousel_mobile_column">
+                <div className="container container_column carousel">
+                    <div className="swiper_container_gallery">
+                        <Swiper
+                            modules={[Navigation, Pagination, Scrollbar]}
+                            spaceBetween={50}
+                            slidesPerView={1}
+                            navigation
+                            pagination={{ clickable: true }}
+                            scrollbar={{ draggable: true }}
+                        >
+                            {Object.entries(list).map((t, k) => (
+                                <SwiperSlide>
+                                    {/* resolver key para cada child de list */}
+                                    <a href={"/gallery/" + t[1]}>
+                                        <div className="swiper_slide_gallery">
+                                            <img
+                                                src={"/gallery/" + t[1]}
+                                                alt="foto das roupas"
+                                            />
+                                        </div>
+                                    </a>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
-            </div>
-            <div className="container container_column">
-                <div className="swiper_container_gallery">
-                    <Swiper
-                        modules={[Navigation, Pagination, Scrollbar]}
-                        spaceBetween={0}
-                        slidesPerView={1}
-                        navigation
-                        pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
-                    >
-                        {Object.entries(list2).map((t, k) => (
-                            <SwiperSlide>
-                                {/* resolver key para cada child de list */}
-                                <a href={"/gallery2/" + t[1]}>
-                                    <div className="swiper_slide_gallery">
-                                        <img
-                                            src={"/gallery2/" + t[1]}
-                                            alt="foto das roupas"
-                                            style={{ aspectRatio: 4 / 5 }}
-                                        />
-                                    </div>
-                                </a>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                <div className="container container_column carousel">
+                    <div className="swiper_container_gallery">
+                        <Swiper
+                            modules={[Navigation, Pagination, Scrollbar]}
+                            spaceBetween={50}
+                            slidesPerView={1}
+                            navigation
+                            pagination={{ clickable: true }}
+                            scrollbar={{ draggable: true }}
+                        >
+                            {Object.entries(list2).map((t, k) => (
+                                <SwiperSlide>
+                                    {/* resolver key para cada child de list */}
+                                    <a href={"/gallery2/" + t[1]}>
+                                        <div className="swiper_slide_gallery">
+                                            <img
+                                                src={"/gallery2/" + t[1]}
+                                                alt="foto das roupas"
+                                            />
+                                        </div>
+                                    </a>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
-            </div>
             </div>
         </>
     );
