@@ -12,7 +12,7 @@ export default function faq() {
                     <h2>Qual é a quantidade mínima para compra?</h2>
                     <p>12 peças</p>
                     <h2>Qual horário comercial?</h2>
-                    <p>7Ç30 às 17:30, segunda a sexta</p>
+                    <p>7:30 às 17:30, segunda a sexta</p>
                     <h2>Eu consigo comprar pelo o whatsapp?</h2>
                     <p>
                         Sim pelo o Whatsapp ou pelo <a href="">site</a>
