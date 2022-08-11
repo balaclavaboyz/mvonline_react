@@ -56,7 +56,7 @@ body {
     display: none;
 }
 .carousel {
-    width: 50%;
+    width: 45vw;
 }
 .carousel_margin {
     gap: 1rem;
@@ -68,6 +68,9 @@ body {
     object-fit: cover;
     object-position: center;
 }
+    .carousel_mobile_column {
+        flex-direction: column;
+    }
 @media only screen and (max-width: 1024px) {
     .carousel_mobile_column {
         flex-direction: column;
