@@ -154,7 +154,7 @@ function App() {
                 >
                     Política De Privacidade
                 </Link>
-                <p>&copy;Peter Kim 2022</p>
+                <p>&copy;Peter Kim 2023</p>
             </div>
         </>
     );
